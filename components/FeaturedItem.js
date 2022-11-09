@@ -4,8 +4,12 @@ import {Image, StyleSheet, Text, View} from 'react-native';
 const FeaturedItem = () => {
   const [data, setData] = useState({});
 
+  console.log(data);
+
   useEffect(() => {
-    fetch('https://my-json-server.typicode.com/YashJain24-chief/demo/featured')
+    fetch(
+      'https://my-json-server.typicode.com/YashJain24-chief/Food_recepie/featured',
+    )
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));

@@ -1,0 +1,148 @@
+{
+  "featured": {
+    "recepieName": "Paneer Butter",
+    "img": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?crop=entropy&cs=a&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cGFuZWVyfHx8fHx8MTY2Nzg4NzM2Mg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+    "rating": 5,
+    "by": "zomato",
+    "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+    "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+  },
+  "menu": [
+    {
+      "id": 1,
+      "recepieName": "Kulcha",
+      "img": "https://images.unsplash.com/photo-1576846806147-8065a16f89b0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2hhcGF0aXx8fHx8fDE2Njc4ODc1ODg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 4,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 2,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 3,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 4,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 5,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 6,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 7,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 8,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 9,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 10,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 11,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 12,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 13,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 14,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    },
+    {
+      "id": 15,
+      "recepieName": "Veg Pulav",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8cHVsYXZ8fHx8fHwxNjY3ODg3NjM4&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920",
+      "rating": 5,
+      "by": "zomato",
+      "ingredients": ["Basmathi rice", "Garam Masala", "Salt", "Pepper"],
+      "instructions": "The package is delicate, please open with care. You have ordered the best dish and we hope you'll love it"
+    }
+  ],
+  "user_ratings": {}
+}

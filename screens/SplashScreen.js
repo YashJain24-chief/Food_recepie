@@ -10,7 +10,9 @@ const SplashScreen = ({navigation}) => {
 
   return (
     <View style={styles['splash_container']}>
-      <Image source={require('../assets/splash.png')} style={styles.splash} />
+      <View style={styles.child_splash}>
+        <Image source={require('../assets/splash.png')} style={styles.splash} />
+      </View>
     </View>
   );
 };
@@ -20,6 +22,12 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     backgroundColor: '#D70F64',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  child_splash: {
+    width: '40%',
+    height: '40%',
     alignItems: 'center',
     justifyContent: 'center',
   },

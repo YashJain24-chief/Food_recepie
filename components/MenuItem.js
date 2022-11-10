@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-const FeaturedItem = ({navigation, data}) => {
+const MenuItem = ({navigation, data}) => {
   function navigate() {
     navigation.navigate('details', {
       ingredients: data.ingredients,
@@ -15,19 +15,17 @@ const FeaturedItem = ({navigation, data}) => {
   return (
     <View style={styles.item_height}>
       <TouchableOpacity onPress={navigate}>
-        <View>
-          <Image
-            style={styles['item_image']}
-            source={{
-              uri: data.img,
-            }}
-          />
-          <View style={styles.details}>
-            <Text style={{...styles.text, ...styles.fontTitle}}>
-              {data.recepieName}
-            </Text>
-            <Text style={{...styles.text, ...styles.fontBy}}>by {data.by}</Text>
-          </View>
+        <Image
+          style={styles['item_image']}
+          source={{
+            uri: data.img,
+          }}
+        />
+        <View style={styles.details}>
+          <Text style={{...styles.text, ...styles.fontTitle}}>
+            {data.recepieName}
+          </Text>
+          <Text style={{...styles.text, ...styles.fontBy}}>by {data.by}</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -35,9 +33,14 @@ const FeaturedItem = ({navigation, data}) => {
 };
 
 const styles = StyleSheet.create({
+  item_height: {
+    width: '50%',
+    height: 200,
+    padding: 5,
+  },
   item_image: {
     width: '100%',
-    height: '100%',
+    height: 180,
     opacity: 0.5,
     borderRadius: 25,
   },
@@ -46,16 +49,13 @@ const styles = StyleSheet.create({
     bottom: 0,
     padding: 10,
   },
-  item_height: {
-    height: '50%',
-    padding: 10,
-  },
+
   text: {
     color: 'white',
     marginVertical: 2,
   },
   fontTitle: {
-    fontSize: 30,
+    fontSize: 20,
     opacity: 0.7,
   },
   fontBy: {
@@ -64,4 +64,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FeaturedItem;
+export default MenuItem;

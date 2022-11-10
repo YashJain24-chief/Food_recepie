@@ -1,11 +1,44 @@
-import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {FlatList, StyleSheet, View} from 'react-native';
 import FeaturedItem from '../components/FeaturedItem';
+import MenuItem from '../components/MenuItem';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
+  const [featuredData, setFeaturedData] = useState({});
+  const [menu, setMenu] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      'https://my-json-server.typicode.com/YashJain24-chief/Food_recepie/featured',
+    )
+      .then(res => res.json())
+      .then(data => setFeaturedData(data))
+      .catch(err => console.log(err));
+
+    fetch(
+      'https://my-json-server.typicode.com/YashJain24-chief/Food_recepie/menu',
+    )
+      .then(res => res.json())
+      .then(data => setMenu(data))
+      .catch(err => console.log(err));
+  }, []);
+
   return (
     <View style={styles['home_container']}>
-      <FeaturedItem />
+      {featuredData && (
+        <FeaturedItem navigation={navigation} data={featuredData} />
+      )}
+      {menu && (
+        <FlatList
+          style={styles.list}
+          data={menu}
+          renderItem={({item}) => (
+            <MenuItem navigation={navigation} data={item} />
+          )}
+          numColumns={2}
+          keyExtractor={item => item.id}
+        />
+      )}
     </View>
   );
 };

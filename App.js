@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashScreen from './screens/SplashScreen';
 import HomeScreen from './screens/HomeScreen';
 import ItemDetails from './components/ItemDetails';
+import AddRecepieScreen from './screens/AddRecepieScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,6 +36,17 @@ const App = () => {
             component={ItemDetails}
             options={{
               title: 'Food Details',
+              headerStyle: {backgroundColor: '#D70F64'},
+              headerTitleStyle: {
+                color: 'white',
+              },
+            }}
+          />
+          <Stack.Screen
+            name="addRecepie"
+            component={AddRecepieScreen}
+            options={{
+              title: 'Add Recepie',
               headerStyle: {backgroundColor: '#D70F64'},
               headerTitleStyle: {
                 color: 'white',

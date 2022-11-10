@@ -1,5 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Rating} from 'react-native-ratings';
 
 const MenuItem = ({navigation, data}) => {
   function navigate() {
@@ -25,7 +26,13 @@ const MenuItem = ({navigation, data}) => {
           <Text style={{...styles.text, ...styles.fontTitle}}>
             {data.recepieName}
           </Text>
-          <Text style={{...styles.text, ...styles.fontBy}}>by {data.by}</Text>
+          <Rating
+            imageSize={15}
+            type="custom"
+            ratingBackgroundColor="#c8c7c8"
+            startingValue={data.rating}
+            readonly
+          />
         </View>
       </TouchableOpacity>
     </View>
@@ -41,7 +48,6 @@ const styles = StyleSheet.create({
   item_image: {
     width: '100%',
     height: 180,
-    opacity: 0.5,
     borderRadius: 25,
   },
   details: {
@@ -56,11 +62,9 @@ const styles = StyleSheet.create({
   },
   fontTitle: {
     fontSize: 20,
-    opacity: 0.7,
   },
   fontBy: {
     fontSize: 20,
-    opacity: 0.6,
   },
 });
 

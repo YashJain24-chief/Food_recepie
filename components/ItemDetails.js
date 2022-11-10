@@ -36,10 +36,10 @@ const ItemDetails = ({route}) => {
           }}
         />
         <View style={styles.details}>
-          <Text style={{...styles.text, ...styles.fontTitle}}>
+          <Text style={{...styles.text_white, ...styles.fontTitle}}>
             {recepieName}
           </Text>
-          <Text style={{...styles.text, ...styles.fontBy}}>by {by}</Text>
+          <Text style={{...styles.text_white, ...styles.fontBy}}>by {by}</Text>
         </View>
       </View>
       <Text style={{...styles.text, ...styles.fontBy, ...styles.marginTop}}>
@@ -56,7 +56,11 @@ const ItemDetails = ({route}) => {
         </Text>
         <Text style={styles.text}>{instructions}</Text>
       </View>
-      <Rating onFinishRating={ratingCompleted} style={{...styles.marginTop}} />
+      <Rating
+        onFinishRating={ratingCompleted}
+        style={{...styles.marginTop}}
+        type="heart"
+      />
     </View>
   );
 };
@@ -66,12 +70,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     padding: 10,
-    backgroundColor: '#242B2E',
+    backgroundColor: 'rgb(255,255,255)',
   },
   item_image: {
     width: '100%',
     height: '100%',
-    opacity: 0.5,
     borderRadius: 25,
   },
   details: {
@@ -83,19 +86,21 @@ const styles = StyleSheet.create({
     height: '50%',
   },
   text: {
+    color: 'black',
+    marginVertical: 3,
+  },
+  text_white: {
     color: 'white',
     marginVertical: 3,
   },
   fontTitle: {
     fontSize: 30,
-    opacity: 0.7,
   },
   fontBy: {
     fontSize: 20,
-    opacity: 0.6,
   },
   marginTop: {
-    marginTop: 20,
+    marginTop: 15,
   },
 });
 

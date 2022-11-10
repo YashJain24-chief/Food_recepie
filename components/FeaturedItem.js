@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
   item_image: {
     width: '100%',
     height: '100%',
-    opacity: 0.5,
     borderRadius: 25,
   },
   details: {
@@ -56,11 +55,9 @@ const styles = StyleSheet.create({
   },
   fontTitle: {
     fontSize: 30,
-    opacity: 0.7,
   },
   fontBy: {
     fontSize: 20,
-    opacity: 0.6,
   },
 });
 

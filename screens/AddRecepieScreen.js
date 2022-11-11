@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {
   Button,
   Image,
@@ -12,19 +12,59 @@ import {
 const AddRecepieScreen = ({navigation}) => {
   const [textInputCount, setTextInputCount] = useState(1);
 
+  const [formData, setFormData] = useState({});
+
   function addTextInput() {
     setTextInputCount(textInputCount + 1);
   }
 
   function save() {
+    const dataFormat = {ingredients: []};
+    for (content in formData) {
+      if (content.includes('ingredient')) {
+        dataFormat.ingredients.push(formData[content]);
+      } else {
+        dataFormat[content] = formData[content];
+      }
+    }
+    fetch(
+      'https://my-json-server.typicode.com/YashJain24-chief/Food_recepie/menu',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataFormat),
+      },
+    )
+      .then(res => res.json())
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
     navigation.navigate('home');
+  }
+
+  function handleFormData(name, value) {
+    setFormData(prv => {
+      return {
+        ...prv,
+        [name]: value,
+      };
+    });
   }
 
   return (
     <View style={styles.add_recepie_container}>
-      <TextInput placeholder="Recepie Name" style={styles.textInput} />
+      <TextInput
+        placeholder="Recepie Name"
+        style={styles.textInput}
+        onChangeText={text => handleFormData('recepieName', text)}
+      />
 
-      <TextInput placeholder="Instructions" style={styles.textInput} />
+      <TextInput
+        placeholder="Instructions"
+        style={styles.textInput}
+        onChangeText={text => handleFormData('instructions', text)}
+      />
       <View
         style={{
           flexDirection: 'row',
@@ -37,20 +77,21 @@ const AddRecepieScreen = ({navigation}) => {
           />
         </TouchableOpacity>
       </View>
-      <View style={styles.ingredients_container_child}>
-        {Array(textInputCount)
-          .fill('')
-          .map((item, index) => (
-            <TextInput
-              placeholder="Ingredients"
-              key={index}
-              style={{
-                ...styles.textInput,
-              }}
-            />
-          ))}
-        <Button title="Save" onPress={save} />
-      </View>
+      {Array(textInputCount)
+        .fill('')
+        .map((item, index) => (
+          <TextInput
+            placeholder="Ingredients"
+            onChangeText={text =>
+              handleFormData(`ingredient${index + 1}`, text)
+            }
+            key={index}
+            style={{
+              ...styles.textInput,
+            }}
+          />
+        ))}
+      <Button title="Save" onPress={save} />
     </View>
   );
 };
@@ -74,9 +115,6 @@ const styles = StyleSheet.create({
     borderColor: 'red',
     flexDirection: 'row',
     alignItems: 'center',
-  },
-  ingredients_container_child: {
-    width: '85%',
   },
 });
 

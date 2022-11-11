@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, StatusBar, StyleSheet, Text} from 'react-native';
+import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashScreen from './screens/SplashScreen';
